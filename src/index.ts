@@ -21,7 +21,6 @@ function buscarPromedioAnual(arrayAlumno: string[], arrayNotas: number[][]) {
   nombreAlumno = String(prompt("Ingrese el nombre del alumno para calular su promedio anual:"));
   indiceAlumno = arrayAlumno.indexOf(nombreAlumno);
   if (indiceAlumno !== -1) {
-    console.log ("aca recibe ",arrayNotas.length);
     for (let j = 0; j < trimestres; j++) {
       promedioAnual += arrayNotas[indiceAlumno][j];
     }
